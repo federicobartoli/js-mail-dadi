@@ -11,3 +11,7 @@
   height: 100vh;
   flex-direction: column;
 }
+
+img {
+  height: 100px;
+}

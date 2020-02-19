@@ -42,7 +42,15 @@ if(trovato) {
 // Creazione numeri random da 1 a 6
 // Confronto quale numero è più alto
 // Quello più alto vince
-
+// Creo array con immagini del dado
+var facciaDado = [
+    "<img src='img/1.png'>",
+    "<img src='img/2.png'>",
+    "<img src='img/3.png'>",
+    "<img src='img/4.png'>",
+    "<img src='img/5.png'>",
+    "<img src='img/6.png'>"
+];
 var dado1 = Math.floor(Math.random() * 6) + 1;
 document.getElementById('dado-uno').innerHTML = dado1;
 var dado2 = Math.floor(Math.random() * 6) + 1;
@@ -63,3 +71,16 @@ else {
   document.getElementById('vincita-due').innerHTML = 'Vince il dado due';
 
 }
+
+ // stampo la faccia dado1
+for (var i = 0; i<=6; i++) {
+  if (dado1 == i)
+  document.getElementById('dado-immagine').innerHTML = facciaDado [i-1];
+
+}
+ // stampo la faccia dado2
+ for (var ip = 0; ip<=6; ip++) {
+   if (dado2 == ip)
+   document.getElementById('dado-immagine-2').innerHTML = facciaDado [ip-1];
+
+ }
