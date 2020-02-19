@@ -52,6 +52,10 @@ if (dado1 > dado2) {
   document.getElementById('vincita-uno').innerHTML = 'Vince il dado uno';
 
 }
+if (dado1 == dado2) {
+  document.getElementById('parita').innerHTML = 'Abbiamo una parità!';
+
+}
 else {
   document.getElementById('vincita-due').innerHTML = 'Vince il dado due';
 

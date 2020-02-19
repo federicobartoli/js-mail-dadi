@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.centrato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
