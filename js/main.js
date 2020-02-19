@@ -48,11 +48,14 @@ document.getElementById('dado-uno').innerHTML = dado1;
 var dado2 = Math.floor(Math.random() * 6) + 1;
 document.getElementById('dado-due').innerHTML = dado2;
 
+var vincita = false;
+
 if (dado1 > dado2) {
   document.getElementById('vincita-uno').innerHTML = 'Vince il dado uno';
+  vincita = true;
 
 }
-if (dado1 == dado2) {
+else if(dado1 == dado2) {
   document.getElementById('parita').innerHTML = 'Abbiamo una parità!';
 
 }
