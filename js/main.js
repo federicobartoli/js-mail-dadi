@@ -13,7 +13,7 @@ for(var i = 0; i < iscritti.length; i++) {
     if(iscritti[i] ==tuaEmail) {
       document.getElementById('entra-alla-festa').innerHTML = 'Puoi entrare alla festa';
     }
-    if(iscritti[i] ==tuaEmail) {
+    else {
       document.getElementById('non-entra-alla-festa').innerHTML = 'Non puoi entrare alla festa';
     }
 }
