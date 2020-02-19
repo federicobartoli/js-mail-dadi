@@ -8,12 +8,25 @@ var iscritti = ['luigi@email.com','luigi2@email.com','luigi3@email.com','luigi4@
 var tuaEmail = prompt('Inserisci la tua email per poter accedere');
   console.log(tuaEmail);
 
+//Possiamo creare una variabile che controlli in che situazione ci troviamo
+var trovato = false;
 
 for(var i = 0; i < iscritti.length; i++) {
-    if(iscritti[i] ==tuaEmail) {
-      document.getElementById('entra-alla-festa').innerHTML = 'Puoi entrare alla festa';
+    if(iscritti[i] == tuaEmail) {
+      trovato = true;
     }
-    else {
+    // else {
+    //   document.getElementById('non-entra-alla-festa').innerHTML = 'Non puoi entrare alla festa';
+    // }
+    /*if(iscritti[i] != tuaEmail) {
       document.getElementById('non-entra-alla-festa').innerHTML = 'Non puoi entrare alla festa';
-    }
+    }*/
+}
+
+if(trovato) {
+    document.getElementById('entra-alla-festa').innerHTML = 'Puoi entrare alla festa';
+
+} else {
+  document.getElementById('non-entra-alla-festa').innerHTML = 'Non puoi entrare alla festa';
+
 }
